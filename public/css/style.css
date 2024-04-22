@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #f1f1f1;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: #202020;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.img {
+    position: relative;
+    display: none;
+}
+
+.img img {
+    border: 5px solid #f1f1f1;
+    padding: 10px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 5em rgba(255, 255, 255, 0.10);
+}
+
+.inputbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.inputbox button {
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+#downloadButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    background: #333;
+    color: #f1f1f1;
+}
+
+#downloadButton:hover {
+    background: #444;
+}
